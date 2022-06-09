@@ -1,6 +1,15 @@
 version = 1
 
 [[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ['nodejs', 'jest']
+  plugins = ['vue']
+  dialect = 'typescript'
+
+[[analyzers]]
 name = "secrets"
 enabled = true
 
